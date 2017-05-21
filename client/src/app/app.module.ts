@@ -3,9 +3,10 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MdButtonModule,MdIconModule,MdMenuModule } from '@angular/material';
+import { MdButtonModule,MdIconModule,MdMenuModule,MdToolbarModule} from '@angular/material';
 import { AppComponent } from './app.component';
 import 'hammerjs';
+import {FlexLayoutModule} from '@angular/flex-layout'
 
 @NgModule({
   declarations: [
@@ -18,7 +19,9 @@ import 'hammerjs';
     BrowserAnimationsModule,
     MdButtonModule,
     MdIconModule,
-    MdMenuModule
+    MdMenuModule,
+    MdToolbarModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
