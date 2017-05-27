@@ -15,22 +15,24 @@
     <span>Disable alerts</span>
   </button>
 </md-menu>-->
-<div fxLayout="row">
+<div fxLayout="row" fxLayoutAlign="center">
   <md-toolbar>
-
-    <div fxFlex="20%">
+    <div fxFlex="10%">
       <img src="assets/logo64.png" alt="">
     </div>
-    <div fxFlex="20%">
-      <button md-raised-button>ثبت نام</button>
+    <div fxFlexOffset="90%"></div>
+    <div fxFlex="5%" fxFlexAlign="end center">
+      <button md-button>ورود</button>
     </div>
     <md-toolbar-row>
-      <span>Second Row</span>
+      <div fxFlexOffset="20px"></div>
+      <div fxFlex="20%">
+        <md-menu #appMenu="mdMenu">
+          <button md-menu-item>گروه بندی</button>
+          <button md-menu-item> خرید </button>
+        </md-menu>
+        <button md-button [mdMenuTriggerFor]="appMenu">دروس</button>
+      </div>
     </md-toolbar-row>
-
-    <md-toolbar-row>
-      <span>Third Row</span>
-    </md-toolbar-row>
-
   </md-toolbar>
 </div>
