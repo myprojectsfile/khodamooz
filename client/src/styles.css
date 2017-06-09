@@ -1,6 +1,7 @@
 @import '../node_modules/@angular/material/prebuilt-themes/indigo-pink.css';
-@import './style-material.css';
-/* fallback */
+@import './custom-material-theme.scss';
+@include custom-material-theme($theme);
+
 @font-face {
   font-family: 'Material Icons';
   font-style: normal;
