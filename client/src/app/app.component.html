@@ -1,38 +1,35 @@
-<!--<button md-icon-button [mdMenuTriggerFor]="menu">
-  <md-icon>more_vert</md-icon>
-</button>
-<md-menu #menu="mdMenu">
-  <button md-menu-item>
-    <span>ورود به سامانه</span>
-    <md-icon>perm_identity</md-icon>
-  </button>
-  <button md-menu-item disabled>
-    <md-icon>voicemail</md-icon>
-    <span>Check voicemail</span>
-  </button>
-  <button md-menu-item>
-    <md-icon>notifications_off</md-icon>
-    <span>Disable alerts</span>
-  </button>
-</md-menu>-->
 <div fxLayout="row" fxLayoutAlign="center">
-  <md-toolbar>
-    <div fxFlex="10%">
-      <img src="assets/logo64.png" alt="">
+  <md-toolbar color="primary">
+    <div fxFlex="7" fxFlexAlign="center stretch">
+      <button md-button>ثبت نام</button>
     </div>
-    <div fxFlexOffset="90%"></div>
-    <div fxFlex="5%" fxFlexAlign="end center">
+    <div fxFlex="7" fxFlexAlign="center stretch">
       <button md-button>ورود</button>
     </div>
-    <md-toolbar-row>
-      <div fxFlexOffset="20px"></div>
-      <div fxFlex="20%">
-        <md-menu #appMenu="mdMenu">
-          <button md-menu-item>گروه بندی</button>
-          <button md-menu-item> خرید </button>
-        </md-menu>
-        <button md-button [mdMenuTriggerFor]="appMenu">دروس</button>
-      </div>
-    </md-toolbar-row>
+    <div fxFlex="7" fxFlexAlign="center stretch">
+      <button md-button [mdMenuTriggerFor]="profileMenu">پروفایل من</button>
+    </div>
+    <div fxFlex="7" fxFlexAlign="center stretch">
+      <button md-button><md-icon>shopping_cart</md-icon></button>
+    </div>
+    <div fxFlex="10.5" fxFlexAlign="center stretch">
+      <button md-button>دوره های آموزشی من</button>
+    </div>
+    <div fxFlex="7" fxFlexAlign="center stretch">
+      <button md-button>دسته بندی</button>
+    </div>
   </md-toolbar>
 </div>
+
+<!--define menu start-->
+  <!--profile menu-->
+  <md-menu #profileMenu="mdMenu" xPosition="before" yPosition="below">
+    <button md-menu-item>مشخصات پروفایل</button>
+    <button md-menu-item>لیست علاقه مندی ها</button>
+    <button md-menu-item>پیامهای من</button>
+    <button md-menu-item>راهنما</button>
+    <button md-menu-item>تنظیمات حساب کاربری</button>
+    <button md-menu-item>سابقه خرید</button>
+    <button md-menu-item>خروج</button>
+  </md-menu>
+<!--define menu end-->
