@@ -26,6 +26,6 @@
   -webkit-font-smoothing: antialiased;
 }
 
-body{
+body,button,.mat-input-container{
     font-family: calibri,tahoma;
 };

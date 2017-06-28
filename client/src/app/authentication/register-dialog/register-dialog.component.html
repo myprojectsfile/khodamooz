@@ -2,9 +2,34 @@
   ثبت نام در خودآموز
 </div>
 <md-dialog-content>
-  <div>مشخصات</div>
+  <form #regForm="ngForm" (ngSubmit)="registerUser()">
+    <md-input-container>
+      <input mdInput type="text" placeholder="نام" required>
+    </md-input-container>
+    <md-input-container>
+      <input mdInput type="text" placeholder="نام خانوادگی" required>
+    </md-input-container>
+    <md-input-container>
+      <input mdInput type="text" placeholder="نام کاربری" required>
+    </md-input-container>
+    <md-input-container>
+      <input mdInput type="text" placeholder="شماره موبایل">
+    </md-input-container>
+    <md-input-container>
+      <input mdInput type="email" placeholder="ایمیل" required>
+    </md-input-container>
+    <md-input-container>
+      <input mdInput type="email" placeholder="تکرار ایمیل" required>
+    </md-input-container>
+    <md-input-container>
+      <input mdInput type="password" placeholder="کلمه عبور" required>
+    </md-input-container>
+    <md-input-container>
+      <input mdInput type="password" placeholder="تکرار کلمه عبور" required>
+    </md-input-container>
+  </form>
 </md-dialog-content>
 <md-dialog-actions>
-  <button md-raised-button [md-dialog-close]="true" color="primary">ثبت نام</button>
-  <button md-raised-button md-dialog-close color="warn">انصراف</button>
+  <button md-button [md-dialog-close]="true">ثبت نام</button>
+  <button md-button md-dialog-close color="warn">انصراف</button>
 </md-dialog-actions>

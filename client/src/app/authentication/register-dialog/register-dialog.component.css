@@ -1,6 +1,10 @@
 :host {
     font-family: calibri,tahoma;
+    direction: rtl;
 }
 button{
     font-family: calibri,tahoma;
+}
+.mat-input-container{
+  font-family: calibri,tahoma;
 }

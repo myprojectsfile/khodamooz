@@ -9,4 +9,8 @@ import { MdDialogRef } from "@angular/material";
 export class RegisterDialogComponent {
 
   constructor(public dialogRef: MdDialogRef<RegisterDialogComponent>) { }
+
+  registerUser(){
+
+  }
 }

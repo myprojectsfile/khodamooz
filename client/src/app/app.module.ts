@@ -4,10 +4,10 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MdButtonModule,MdIconModule,MdMenuModule,MdToolbarModule,MdDialogModule} from '@angular/material';
+import { MdButtonModule, MdIconModule, MdMenuModule, MdToolbarModule, MdDialogModule, MdInputModule } from '@angular/material';
 import { AppComponent } from './app.component';
 import 'hammerjs';
-import {FlexLayoutModule} from '@angular/flex-layout';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { LoginDialogComponent } from './authentication/login-dialog/login-dialog.component';
 import { RegisterDialogComponent } from './authentication/register-dialog/register-dialog.component'
 
@@ -26,13 +26,14 @@ import { RegisterDialogComponent } from './authentication/register-dialog/regist
     MdIconModule,
     MdMenuModule,
     MdToolbarModule,
+    MdInputModule,
     FlexLayoutModule,
     MdDialogModule
   ],
   providers: [
     AuthService
   ],
-  entryComponents:[RegisterDialogComponent],
+  entryComponents: [RegisterDialogComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

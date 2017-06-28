@@ -19,8 +19,8 @@ export class AppComponent {
 
   register() {
     let dialogRef = this.mdDialog.open(RegisterDialogComponent, {
-      height: '400px',
-      width: '300px'
+      height: '370px',
+      width: '370px'
     });
     dialogRef.afterClosed().subscribe(result => {
       console.log('dialog closed.');
